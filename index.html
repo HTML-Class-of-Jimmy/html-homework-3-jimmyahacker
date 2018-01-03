@@ -1,0 +1,123 @@
+<!-- 1. 让h1和p元素的具有1px宽的powderblue颜色的实线边框 -->
+<!-- 2. 让a元素的四种状态具有不同的文字颜色，背景颜色，文字装饰各不相同 -->
+<!-- 3. 让table, th, td元素具有1px宽的黑色的实线边框 -->
+<!-- 4. 让table内部的th, td的相邻边框合并为一条 -->
+<!-- 5. 让th, td元素的内部padding为15px -->
+<!-- 6. th元素为靠左对齐-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <style>
+            table#t01 {
+                width: 100%; 
+                background-color: #f1f1c1;
+            }
+            table#t01 tr:nth-child(even) {
+                background-color: #eee;
+            }
+            table#t01 tr:nth-child(odd) {
+                background-color: #fff;
+            }
+            table#t01 th {
+                color: white;
+                background-color: black;
+            }
+        </style>
+    </head>
+    <body>
+        <h1 style="color:Tomato;border:2px solid Tomato;">不走心的Homework</h1>
+        <!-- 7. 通过rgba的方式修改下面的背景颜色 -->
+        <h1>rgba(255, 99, 71, 0.5)</h1>
+        <!-- 8. 通过hsla的方式修改下面的背景颜色 -->
+        <h1>hsla(9, 100%, 64%, 0.5)</h1>
+        <!-- 9. 修改下面标签使得在本页打开谷歌 -->
+        <a href="https://www.google.com/">在本页打开谷歌</a>
+        <!-- 10. 修改下面标签使得在新页面打开谷歌 -->
+        <a href="https://www.google.com/">在新页面页打开谷歌</a>
+        <!-- 11. 修改下面标签使得在点击图片均可打开谷歌 -->
+        图片里打开谷歌
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Google-favicon-2015.png/150px-Google-favicon-2015.png" alt="Google" style="width:42px;height:42px;border:0;">
+        <br>
+        <table style="width:100%">
+            <tr>
+                <th>Firstname</th>
+                <th>Lastname</th> 
+                <th>Age</th>
+            </tr>
+            <tr>
+                <td>Jill</td>
+                <td>Smith</td> 
+                <td>50</td>
+            </tr>
+            <tr>
+                <td>Eve</td>
+                <td>Jackson</td> 
+                <td>94</td>
+            </tr>
+        </table>
+        <table style="width:100%">
+            <tr>
+                <th>Name</th>
+                <th colspan="2">Telephone</th>
+            </tr>
+            <tr>
+                <td>Bill Gates</td>
+                <td>55577854</td>
+                <td>55577855</td>
+            </tr>
+        </table>
+        <table style="width:100%">
+            <tr>
+                <th>Name:</th>
+                <td>Bill Gates</td>
+            </tr>
+            <tr>
+                <th rowspan="2">Telephone:</th>
+                <td>55577854</td>
+            </tr>
+            <tr>
+                <td>55577855</td>
+            </tr>
+        </table>
+        <!-- 12. 让所有的Record#下的数字拥有同样的样式：字体颜色为黑色；背景颜色为番茄色；字体居中 -->
+        <table id="t01">
+            <caption>
+                GDP of each country
+            </caption>
+            <tr>
+                <th>Record #</th>
+                <th>Country</th>
+                <th>GDP(in Million $)</th>
+            </tr>
+            <tr>
+                <td>1</th>
+                <td>United States</td>
+                <td>19417.144</td>
+            </tr>
+            <tr>
+                <td>2</th>
+                <td>China</td>
+                <td>11795.297</td>
+            </tr>
+            <tr>
+                <td>3</th>
+                <td>Japan</td>
+                <td>4841.221</td>
+            </tr>
+            <tr>
+                <td>4</th>
+                <td>Germany</td>
+                <td>3423.287</td>
+            </tr>
+            <tr>
+                <td>5</th>
+                <td>United Kingdom</td>
+                <td>2496.757</td>
+            </tr>
+        </table>
+        <br>
+        <!-- 13. 跳转到头部“不走心的homework”部分 -->
+        <a>Jump to Title</a>
+    </body>
+</html>
